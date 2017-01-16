@@ -11,7 +11,7 @@ def callback(config, level):
     return config
 
 if __name__ == "__main__":
-    rospy.init_node("dynamic_tutorials", anonymous = True)
+    rospy.init_node("dynamic_tutorials_node", anonymous = True)
 
     srv = Server(TutorialsConfig, callback)
     rospy.spin()
